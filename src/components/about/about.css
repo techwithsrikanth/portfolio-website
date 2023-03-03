@@ -1,0 +1,182 @@
+.about{
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 30% 55%;
+    gap: 12%;
+}
+
+.about__me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background-color: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about__me-img{
+    border-radius: 2rem;
+    margin-bottom: 100px;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    margin-left: 120px;
+}
+
+.about__me-img:hover{
+    transform: rotate(0deg);
+}
+
+.about__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin-right: 50px;
+}
+
+.about_card{
+    background: #4b4b8f;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about__icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5{
+    font-size: 0.95rem;
+}
+
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about__content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1024px){
+    .about__container{
+        height: 200px;
+        grid-template-columns: 1fr; 
+    }
+
+    .about__me{
+        width: 50%;
+        margin: 2rem auto 4 rem;
+        position: relative;
+        left: 180px;
+    }
+
+    .about__me-img{
+            position: relative;
+            left: 20px;
+        
+
+    }
+
+    .about__content p{
+        margin: 1rem 0 1.5rem   ;
+        padding: 20px;
+    }
+
+    .about__cards{
+        width: 100%;
+    }
+
+    .btn-primary{
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .about{
+        position: relative;
+        bottom: 270px;
+        left: 100px;
+    }
+    .about__content{
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+    }
+    .about__me{
+        width: 100%;
+        margin: 0 auto 3rem;
+    }
+    .about__me-img{
+        position: relative;
+        right: 400px;
+        bottom: 230px;
+    }
+
+    .about__cards{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        position: relative;
+        left: 60px;
+        bottom: 500px;
+    }
+
+    .about__content{
+        text-align: center;
+
+    }
+
+    .about__content p{
+        margin: 1.5rem 0;
+        position: relative;
+        bottom: 300px;
+
+    }
+
+    .btn-primary1{
+        position: relative;
+        bottom: 260px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    .about{
+        position: relative;
+        top: 100px;
+    }
+    .about__content{
+        position: relative;
+        right: 30px;
+    }
+
+    .about__me-img{
+        position: relative;
+        right: 150px;
+    }
+
+    .btn-primary1{
+        position: relative;
+        left: 10px;
+    }
+}
+
