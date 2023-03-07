@@ -125,6 +125,9 @@ img{
 
 /*------------------------Media Queries------------------*/
 @media screen and (max-width: 1024px){
+    .body{
+        max-width: 1024px;
+    }
     .container{
         width: var(--container-width-md);
     }
@@ -134,7 +137,11 @@ img{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 425px){
+    .body{
+        max-width: 415px ;
+
+    }
     .container{
         width: var(--container-width-sm);
     }
